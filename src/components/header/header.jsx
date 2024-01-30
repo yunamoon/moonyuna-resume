@@ -3,7 +3,7 @@ import './header.css';
 function header() {
   return (
     <header>
-    <div class="logo">
+    <div className="logo">
     <h1>항해99</h1>
     </div>
     <nav>
