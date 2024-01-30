@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+  background-color: none;
+  color:  #1abc9c;
+  padding: 20px 20px 50px 20px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid #1abc9c6a; 
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 1.3rem; /* 제목 크기 조정 */
+  font-weight: 400; /* 글꼴 굵기 조정 */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 15px; /* 메뉴 간격 조정 */
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color:  #1abc9c;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px 15px; /* 메뉴 버튼 크기 조정 */
+  border: 1px solid  #1abc9c; /* 테두리 추가 */
+  border-radius: 5px; /* 버튼 모서리 둥글게 */
+  transition: background-color 0.3s ease, color 0.3s ease; /* 배경색 변화에 트랜지션 적용 */
+}
+
+nav ul li a:hover {
+  background-color: #1abc9c; /* 민트색 배경 */
+  color: #fff; /* 글자 색상 변경 */
+}
+
