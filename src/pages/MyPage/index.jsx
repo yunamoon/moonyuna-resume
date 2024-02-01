@@ -1,18 +1,36 @@
-import React from 'react'
+import React, { useState,useEffect } from 'react';
 import Header from '../../components/header/header'
 import styles from './mypage.module.css'; 
-function MyPage() {
+import app from '../../firebase';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+function MyPage( {user}) {
+
+  const auth = getAuth(app);
+  const [loginUser , setLoginUser] = useState();
+  const [displayName , setDisplayName] = useState();
+  const [photoURL , setPhotoURL] = useState();
+  const [lastLogin , setLastLogin] = useState();
+  const [email, setEmail] = useState();
+
+  setLoginUser(user);
+  setEmail(user.email);
+  setDisplayName(user.displayName);
+  setPhotoURL(user.photoURL);
+  setLastLogin(user.metadata.lastLoginAt);
+
   return (
     <>
      <Header/>
      <div className={styles.myPageWrapper}>
       <div className={styles.myPageContainer}>
-        
+ 
         <div className={styles.profileInfo}>
-          <img src='' alt="프로필" className={styles.profileImage} />
+          <img src={photoURL} alt="프로필" className={styles.profileImage} />
           <div className={styles.userInfo}>
-            <p><strong>아이디:</strong> 로그인 아이디</p>
-            <p><strong>최근 로그인 시간:</strong> 최근 로그인 시간</p>
+            <p><strong>이름:</strong> {displayName}</p>
+            <p><strong>이메일:</strong> {email}</p>
+            <p><strong>최근 로그인 시간:</strong> {lastLogin}</p>
+            
           </div>
         </div>
         

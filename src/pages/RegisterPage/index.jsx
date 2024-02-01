@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../../components/header/header';
 import { Link, useNavigate } from 'react-router-dom';
-import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
+import { createUserWithEmailAndPassword, getAuth ,updateProfile} from 'firebase/auth';
 import app from '../../firebase';
 import styles from './register.module.css';
 
@@ -11,6 +11,7 @@ function RegisterPage() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [photourl , setPhotourl ] = useState('');
   const [firebaseError, setFirebaseError] = useState('');
   const navigate = useNavigate();
   const auth = getAuth(app);
@@ -18,9 +19,11 @@ function RegisterPage() {
   const fileSelectedHandler = event => {
     const file = event.target.files[0];
     setSelectedFile(file);
+    console.log(selectedFile);
     const fileReader = new FileReader();
     fileReader.onload = () => {
       setPreviewUrl(fileReader.result);
+      setPhotourl(fileReader.result);
     };
     fileReader.readAsDataURL(file);
   };
@@ -30,12 +33,20 @@ function RegisterPage() {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
+      await setUserName(user, name , photourl);
       console.log('회원가입 성공:', user);
       navigate('/');
     } catch (error) {
       console.error('회원가입 실패:', error.message);
       setFirebaseError('이메일 또는 비밀번호가 잘못되었습니다.');
     }
+  };
+
+  const setUserName = async (user, name, photourl) => {
+    // Firebase Custom Claims에 이름 추가
+    console.log(photourl)
+    console.log(user.reloadUserInfo.createdAt);
+    await updateProfile(user, { displayName: name, photoURL : photourl});
   };
 
   return (
