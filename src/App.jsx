@@ -1,7 +1,7 @@
 import './App.css'
 import Header from './components/Header'
-
 import Intro from './components/Intro'
+import Projects from './components/projects/Projects'
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
   <>
   <Header/>
   <Intro/>
+  <Projects/>
   </>
   )
 }

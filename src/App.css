@@ -1,6 +1,7 @@
 body {
   background-color: var(--mainBackground);
   color: var(--mainHeader);
+  padding: 0px 10%;
 }
 
 .gradiant-text {
@@ -8,7 +9,7 @@ body {
   @apply bg-gradient-to-t from-yellow-400 to-gray-200 text-transparent;
   overflow: hidden;
   border-right: 2px solid #fff;
-  animation:  typing-text steps(40) 4s infinite , blink linear 1s infinite;
+  animation:  typing-text steps(40) 3s , blink linear 1s infinite;
   text-wrap: nowrap;
   display: inline-block;
   width: max-content;
@@ -30,11 +31,7 @@ body {
   }
 }
 
-.custom-btn {
-  @apply bg-yellow-500 py-4 px-5 rounded-3xl font-medium shadow-md transition-transform duration-300;
-  @apply transform-gpu hover:scale-105;
-}
 
-.custom-btn:hover {
-  @apply shadow-lg font-bold transition-transform duration-300;
+.project-w {
+ width: 48%;
 }
