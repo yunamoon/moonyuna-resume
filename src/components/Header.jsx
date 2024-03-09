@@ -7,13 +7,13 @@ function Header() {
         <h1 className='font-bold text-xl'>YUNA🌕 Portfolio</h1>
         <ul className='flex gap-4'>
           <li>
-            <a className='text-gray-400 hover:text-white cursor-pointer'>Projects</a>
+          <a className='text-gray-400 hover:text-white cursor-pointer'>About me</a>
           </li>
           <li>
-            <a className='text-gray-400 hover:text-white cursor-pointer'>Skill</a>
+          <a className='text-gray-400 hover:text-white cursor-pointer'>Projects</a>
           </li>
           <li>
-            <a className='text-gray-400 hover:text-white cursor-pointer'>About me</a>
+          <a className='text-gray-400 hover:text-white cursor-pointer'>Skills</a>
           </li>
         </ul>
       </div>

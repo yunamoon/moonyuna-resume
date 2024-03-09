@@ -3,7 +3,7 @@ import React from 'react'
 function Project({project}) {
   return (
    
-        <div className='project-w'>
+        <div className='w-[48%]'>
           <div className='border border-gray-500 rounded-md p-6 w-full transform transition duration-300 hover:scale-105 hover:bg-gray-600 cursor-pointer'>
             <img 
             src={project.img} className='w-full h-50'/>
