@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState } from 'react'
 import Project from './Project'
 
 function Projects() {
@@ -38,10 +38,10 @@ function Projects() {
 
 
         return (
-        <section>
-            <div className='container m-auto px-4 py-15'>
+        <section className='py-8'>
+            <div className='container m-auto px-4 py-8'>
             <h2 className='text-2xl font-semibold'>Projects</h2>
-                <div className='flex flex-wrap justify-between gap-10 mt-10 '>
+                <div className='flex flex-col sm:flex-row flex-wrap justify-between gap-10 mt-10 '>
             {projects.map((item) => (
                     <Project key={item.id} project={item} />
                 ))}

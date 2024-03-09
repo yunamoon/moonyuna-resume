@@ -13,7 +13,7 @@ function Skills() {
 
     console.log(skills)
   return (
-    <section className='py-10'>
+    <section className='py-8'>
     <div className='container m-auto px-4'>
      <h2 className='text-2xl font-semibold'>Skills</h2>
      {skills.map((item, index)=> (
