@@ -39,7 +39,7 @@ function Projects() {
 
         return (
         <section>
-            <div className='container m-auto px-4'>
+            <div className='container m-auto px-4 py-15'>
             <h2 className='text-2xl font-semibold'>Projects</h2>
                 <div className='flex flex-wrap justify-between gap-10 mt-10 '>
             {projects.map((item) => (
