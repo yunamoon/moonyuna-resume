@@ -73,7 +73,7 @@ function Projects() {
   modules={[EffectCoverflow, Pagination, Navigation]}
 >
       {projects.map((item) => (
-                  <SwiperSlide className='mr-[1.5%]'>
+                  <SwiperSlide>
                       <Project key={item.id} project={item} />
                       </SwiperSlide>
                   ))}
