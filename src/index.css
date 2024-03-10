@@ -5,4 +5,7 @@
 :root {
     --mainBackground: #000;
     --mainHeader : #fff;
+    --primary: #6a59ff;
+    --white: #ffffff;
+    --bg: #f5f5f5;
 }

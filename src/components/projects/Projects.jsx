@@ -1,5 +1,12 @@
 import React, {useState } from 'react'
 import Project from './Project'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import slider_sample from '../../assets/images/sample.jpg';
 
 function Projects() {
 
@@ -7,17 +14,24 @@ function Projects() {
         {id : 1,
         title : 'Commune', 
         contents : 'Commune은 이미지를 공유하고 상호 작용할 수 있는 온라인 커뮤니티 플랫폼입니다. React를 기반으로하여 사용자들은 서로의 게시글에 좋아요를 표시하고 댓글을 남기며 친목을 형성할 수 있습니다.' , 
-        img : 'src/assets/images/sample.jpg'},
+        img : 'src/assets/images/sample.jpg',
+        liveLink : 'https://hh99-ac7ee--pr2-develop-hl070utt.web.app',
+        gitLink : 'https://github.com/yunamoon/react-community'},
         
-        {id : 2,
-        title : '펫파크', 
-        contents : '펫파크는 React로 구현된 애견 용품의 온라인 쇼핑 플랫폼입니다. 판매 인증을 받은 사용자들은 안전하고 신뢰성 있는 제품을 판매하며, 고객들은 다양한 기술로 제작된 제품을 구매할 수 있습니다.' , 
-        img : 'src/assets/images/sample.jpg'},
-            
         {id : 3,
         title : '오늘의 위로', 
         contents : '오늘의 위로는 React 기반의 프로젝트로, ChatGPT API를 활용하여 용자가 일상에서 받는 고민이나 스트레스를 공유하고 위로를 받을 수 있는 서비스입니다.' , 
-        img : 'src/assets/images/sample.jpg'},
+        img : 'src/assets/images/sample.jpg',  
+        liveLink : 'https://hh99-ac7ee--pr2-develop-hl070utt.web.app',
+        gitLink : 'https://github.com/yunamoon/react-community'},
+
+        {id : 2,
+        title : '펫파크', 
+        contents : '펫파크는 React로 구현된 애견 용품의 온라인 쇼핑 플랫폼입니다. 판매 인증을 받은 사용자들은 안전하고 신뢰성 있는 제품을 판매하며, 고객들은 다양한 기술로 제작된 제품을 구매할 수 있습니다.' , 
+        img : 'src/assets/images/sample.jpg',
+        liveLink : 'https://hh99-ac7ee--pr2-develop-hl070utt.web.app',
+        gitLink : 'https://github.com/yunamoon/react-community'},
+
         
         {id : 4,
         title : '나무늘보의 서재', 
@@ -41,12 +55,35 @@ function Projects() {
         <section className='py-8'>
             <div className='container m-auto px-4 py-8'>
             <h2 className='text-2xl font-semibold'>Projects</h2>
-                <div className='flex flex-col sm:flex-row flex-wrap justify-between gap-10 mt-10 '>
-            {projects.map((item) => (
-                    <Project key={item.id} project={item} />
-                ))}
-                </div>
+
+
+<Swiper
+  className='container flex items-center mt-10 '
+  effect={'coverflow'}
+  grabCursor={true}
+  centeredSlides={true}
+  loop={true}
+  slidesPerView={1}
+  coverflowEffect={{
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2.5,
+  }}
+  modules={[EffectCoverflow, Pagination, Navigation]}
+>
+      {projects.map((item) => (
+                  <SwiperSlide className='mr-[1.5%]'>
+                      <Project key={item.id} project={item} />
+                      </SwiperSlide>
+                  ))}
+
+</Swiper>
+
             </div>
+
+            
+
         </section>
         )
 }

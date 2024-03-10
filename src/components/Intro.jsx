@@ -24,7 +24,7 @@ function Intro() {
             초기 스타트업에서 개발자로 근무했던 이력만큼 도전적인 경험을 쌓는 것을 좋아하고, 
             그 성취감을 발판으로 다음 도전을 준비하고 있습니다.</p>
             <button 
-            className="px-8 py-5 mt-5 bg-gradient-to-t from-yellow-600 rounded-full to-yellow-300 hover:from-yellow-700 hover:to-yellow-500"
+            className="text-base font-semibold px-8 py-4 mt-5 bg-gradient-to-r from-yellow-600 rounded-full to-yellow-300 hover:from-yellow-500 hover:to-yellow-300"
             onClick={()=>{DownloadResume(PDF_FILE_URL)}}
             >
             Download resume

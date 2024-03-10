@@ -1,12 +1,19 @@
-body {
+.dark {
   background-color: var(--mainBackground);
   color: var(--mainHeader);
   padding: 0px 10%;
 }
 
+.white{
+  background-color: var(--mainHeader);
+  color: var(--mainBackground);
+  padding: 0px 10%;
+}
+
+
 .gradiant-text {
   -webkit-background-clip: text;
-  @apply bg-gradient-to-t from-yellow-400 to-gray-200 text-transparent;
+  @apply bg-gradient-to-r from-gray-100 to-gray-600 text-transparent;
   overflow: hidden;
   border-right: 2px solid #fff;
   animation:  typing-text steps(40) 3s , blink linear 1s infinite;
@@ -30,4 +37,3 @@ body {
     border-color: transparent;
   }
 }
-
