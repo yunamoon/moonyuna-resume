@@ -18,12 +18,12 @@ function App() {
   }
   return (
   <div className={`${check? 'dark' : 'white'}`}>
-  <Header handleThema={handleThema} />
-  <Intro/>
-  <Experiences/>
-  <Projects />
- <Technologies/>
-  <Footer/>
+  <Header handleThema={handleThema} check={check}/>
+  <Intro check={check}/>
+  <Experiences check={check}/>
+  <Projects check={check}/>
+ <Technologies check={check}/>
+  <Footer check={check}/>
   </div>
   )
 }

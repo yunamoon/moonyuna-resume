@@ -6,7 +6,7 @@
 
 .white{
   background-color: var(--mainHeader);
-  color: var(--mainBackground);
+  color: black;
   padding: 0px 10%;
 }
 

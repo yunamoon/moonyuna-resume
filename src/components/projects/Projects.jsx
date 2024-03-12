@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import slider_sample from '../../assets/images/sample.jpg';
 
-function Projects() {
+function Projects({check}) {
 
     const [projects , setProjects] = useState([
         {id : 1,
@@ -70,7 +70,7 @@ function Projects() {
             <h2 className='text-2xl font-semibold mb-5'>Projects</h2>
             <div className='flex flex-wrap flex-col sm:flex-row '> 
            {projects.map((item) => (
-                 <Project key={item.id} project={item} />))}
+                 <Project key={item.id} project={item} check={check} />))}
             </div>
           
             {/* <Swiper

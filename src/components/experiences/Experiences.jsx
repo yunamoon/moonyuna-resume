@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Experience from './Experience'
 
-function Experiences() {
+function Experiences({check}) {
    const [experience, setExperience] = useState([
     { index : 1,
       year : 2021 , 
@@ -11,8 +11,8 @@ function Experiences() {
         {title : 'Java 기반 부트캠프 수료'}, 
         {title : '(주)팀스페이스팜 입사' , 
         detail : 
-        (<p className='text-gray-400 w-[90%]'>
-            <span className='italic text-gray-300'> 2021.09 ~ 2023.10 ( 2년 1개월 )</span>
+        (<p className={`${check? 'text-gray-400' : 'text-gray-700'} w-[90%]`}>
+            <span className={`${check? 'text-gray-400' : 'text-g7ray-700'} italic`}> 2021.09 ~ 2023.10 ( 2년 1개월 )</span>
             <span className='h-2 block'></span>
             신규 서비스 스마트 쑥쑥의 프론트엔드 전 영역을 맡아서 개발했습니다.   
             <span className='h-1 block'></span>
@@ -38,9 +38,10 @@ function Experiences() {
     <section className='pt-8'>
     <div className='container m-auto px-4'>
       <h2 className='text-2xl font-semibold'>Experience</h2>
-      <div className='mt-12 relative before:absolute before:top-0 before:left-16 before:rounded-full  before:bottom-24 before:w-1 before:bg-white'>
+      <div className={`mt-12 relative before:absolute before:top-0 before:left-16 before:rounded-full  before:bottom-24 before:w-1
+      ${check? 'before:bg-white ' : 'before:bg-yellow-100'}`}>
         {experience.map((item, index)=> (
-            <Experience key={index} experience={item} />
+            <Experience key={index} experience={item} check={check}/>
         ))}
       </div>
     </div>

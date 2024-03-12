@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 
-function HeaderItem({item}){
+function HeaderItem({item ,check}){
     return (
       <li>
-      <a href={item.link} target={item.target} className='text-gray-400 hover:text-white cursor-pointer' >{item.title}</a>
+      <a href={item.link} target={item.target}
+      className={`${check ? 'text-gray-400 hover:text-white' : 'text-black hover:text-gray-400' } cursor-pointer`}  >{item.title}</a>
       </li>
     );
 };
 
-function Header({handleThema}) {
+function Header({handleThema, check}) {
 
    const [headerItem, setHeaderItem] = useState([
     {title : 'Experience' , link : '/' , target : '_self'},
@@ -24,12 +25,14 @@ function Header({handleThema}) {
         <h1 className='font-bold text-xl mb-3 sm:mb-0'>YUNA🌕 Portfolio</h1>
         <ul className='flex gap-4'>
           {headerItem.map((item, index)=> (
-            <HeaderItem  key={index} item={item} />
+            <HeaderItem  key={index} item={item} check={check} />
           ))}
-          {/* <li>
-          <a className='text-gray-200 bg-gray-400 py-1 px-3 rounded-md hover:text-white cursor-pointer'
+          <li>
+          <a className={`text-sm cursor-pointer py-1 px-3 rounded-md
+          ${check? 'text-black bg-gray-400 hover:text-gray-900 hover:bg-white' 
+                  :'text-white bg-gray-800 hover:text-white hover:bg-black'} `}
           onClick={handleThema} >dark</a>
-          </li> */}
+          </li>
      
      
         </ul>
