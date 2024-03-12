@@ -53,37 +53,34 @@ function Projects() {
 
         return (
         <section className='py-8'>
-            <div className='container m-auto px-4 py-8'>
-            <h2 className='text-2xl font-semibold'>Projects</h2>
-
-
-<Swiper
-  className='container flex items-center mt-10 '
-  effect={'coverflow'}
-  grabCursor={true}
-  centeredSlides={true}
-  loop={true}
-  slidesPerView={1}
-  coverflowEffect={{
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 2.5,
-  }}
-  modules={[EffectCoverflow, Pagination, Navigation]}
->
-      {projects.map((item) => (
-                  <SwiperSlide>
-                      <Project key={item.id} project={item} />
-                      </SwiperSlide>
-                  ))}
-
-</Swiper>
-
+            <div className='container m-auto px-4 py-9 bg-gray-300'>
+            <h2 className='text-2xl font-semibold mb-10'>Projects</h2>
+            <div className='flex flex-wrap justify-between'> 
+            {projects.map((item) => (
+                 <Project key={item.id} project={item} />))}
             </div>
-
-            
-
+          
+            {/* <Swiper
+              className='container flex items-center mt-10 '
+              effect={'coverflow'}
+              grabCursor={true}
+              centeredSlides={true}
+              loop={true}
+              slidesPerView={1}
+              coverflowEffect={{
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2.5,
+              }}
+              modules={[EffectCoverflow, Pagination, Navigation]}>
+              
+              {projects.map((item) => (
+                <SwiperSlide>
+                 <Project key={item.id} project={item} />
+                </SwiperSlide>))}
+            </Swiper> */}
+            </div>
         </section>
         )
 }

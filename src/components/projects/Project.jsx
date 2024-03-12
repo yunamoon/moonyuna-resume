@@ -19,13 +19,12 @@ function Project({project}) {
 
   return (
    
-          <div className='flex flex-col sm:flex-row sm:gap-10 border border-gray-500 rounded-md p-6 w-[90%] transform transition duration-300 cursor-pointer'>
-            
-                <div className='w-full h-50 sm:w-1/2'>
-                  <img className='h-full' src={project.img} />
-                </div>
+          <div className='flex flex-col w-1/2  sm:gap-10 border border-gray-500 rounded-md p-6 transform transition duration-300 cursor-pointer'>
 
-                <div className='w-full sm:w-1/2'>
+                  <img className='w-[100px] h-full' src={project.img} />
+      
+
+                <div className='w-full'>
                 <h3 className='text-2xl font-semibold mt-8' >스마트 쑥쑥 웹</h3> 
                
                 <ProjectItem title={'Description.'} contents={'신규 서비스인 스마트 쑥쑥의 초기 기획과 프로젝트 설계에 참여하고 베타 버전의 프론트엔드 영역을 개발했습니다.'}/>

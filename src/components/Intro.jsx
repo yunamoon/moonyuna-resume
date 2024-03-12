@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../assets/images/profile.jpeg'
+import profile from '../assets/images/profile.png'
 function Intro() {
 
   const PDF_FILE_URL = 'http://localhost:5173/resume.pdf';
