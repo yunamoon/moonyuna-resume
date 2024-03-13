@@ -9,7 +9,7 @@
     <br />
     <a href="https://yunamoon.github.io/yuna-portfolio">View Demo</a>
     ·
-    <a href="https://moonyuna.tistory.com/category/Moon%F0%9F%8C%95%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/React-community">Blog</a>
+    <a href="https://moonyuna.tistory.com/category/Moon%F0%9F%8C%95%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/React-portfolio">Blog</a>
   </p>
 </div>
 
