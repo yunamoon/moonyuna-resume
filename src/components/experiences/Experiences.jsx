@@ -16,13 +16,7 @@ function Experiences({check}) {
             <span className='h-2 block'></span>
             신규 서비스 스마트 쑥쑥의 프론트엔드 전 영역을 맡아서 개발했습니다.   
             <span className='h-1 block'></span>
-            스마트 쑥쑥은 IoT 환경 센서 기반 농장 모니터링 및 데이터 기반 농업 솔루션을 제공하는 등 농가의 생산량 증진을 위한 종합 관리 서비스입니다.
-            <span className='h-1 block'></span> 
-            제품의 베타 버전은 백엔드 없이 Angular와 Firebase를 사용하여 구축하였고, 초기 버전은 외부 IoT 플랫폼과 JavaScript 등을 사용해 개발했으며,
-            이후에 서비스가 점차 고도화됨에 따라 기술 스택을 React 기반의 앱으로 마이그레이션했습니다.
-            <span className='h-1 block'></span>
-            JavaScript, Redux, Redux Saga, Styled Components, Firebase 등을 사용해 개발하고 Jest를 사용하여 테스트를 관리하였고,
-             Firebase, Git action으로 CI/CD를 구축했습니다.</p>)},]},
+            스마트 쑥쑥은 IoT 환경 센서 기반 농장 모니터링 및 데이터 기반 농업 솔루션을 제공하는 등 농가의 생산량 증진을 위한 종합 관리 서비스입니다.</p>)},]},
    {index : 2, 
     year : 2023 , 
     contents : 

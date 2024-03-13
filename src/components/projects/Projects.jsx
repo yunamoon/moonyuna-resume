@@ -15,7 +15,7 @@ function Projects({check}) {
         title : 'Commune', 
         Description :  '신규 서비스인 스마트 쑥쑥의 초기 기획과 프로젝트 설계에 참여하고 베타 버전의 프론트엔드 영역을 개발했습니다.',
         TechStack  : 'TypeScript, JavaScript, React, Redux, styled-components, Tailwind css, Firebase, Jest, Git actions',
-        img : 'src/assets/images/sample.jpg',
+        img : slider_sample,
         liveLink : 'https://hh99-ac7ee--pr2-develop-hl070utt.web.app',
         gitLink : 'https://github.com/yunamoon/react-community'},
         
@@ -23,7 +23,7 @@ function Projects({check}) {
         title : '오늘의 위로', 
         Description :  'Chat GPT API를 활용하여 유저가 일기를 남기면 하루 일과를 분석하여 그에 상응하는 공감과 피드백을 제공하는 서비스입니다.',
         TechStack  : 'TypeScript, JavaScript, React, Redux, Chat GPT API, Tailwind css, Firebase, Jest, Netlify',
-        img : 'src/assets/images/sample.jpg',  
+        img :  slider_sample,
         liveLink : 'https://hh99-ac7ee--pr2-develop-hl070utt.web.app',
         gitLink : 'https://github.com/yunamoon/react-community'},
 
@@ -31,7 +31,7 @@ function Projects({check}) {
         title : '펫파크', 
         Description :  '펫파크는 React로 구현된 애견 용품의 온라인 쇼핑 플랫폼입니다. 판매 인증을 받은 사용자들은 안전하고 신뢰성 있는 제품을 판매하며, 고객들은 다양한 기술로 제작된 제품을 구매할 수 있습니다.',
         TechStack  : 'TypeScript, JavaScript, React, Redux, Chat GPT API, Tailwind css, Firebase, Jest, Netlify',
-        img : 'src/assets/images/sample.jpg',
+        img :  slider_sample,
         liveLink : 'https://hh99-ac7ee--pr2-develop-hl070utt.web.app',
         gitLink : 'https://github.com/yunamoon/react-community'},
 
@@ -40,7 +40,7 @@ function Projects({check}) {
         title : '나무늘보의 서재', 
         Description :  '나무늘보의 서재는 Next.js를 기반의 블로그 프로젝트로 저의 학습 여정을 기록하고, 참고 자료와 학습 내용을 공유하는 공간입니다.',
         TechStack  : 'TypeScript, Next.js, Redux, Tailwind css, Firebase, Jest, Netlify',
-        img : 'src/assets/images/sample.jpg',
+        img :  slider_sample,
         liveLink : 'https://hh99-ac7ee--pr2-develop-hl070utt.web.app',
         gitLink : 'https://github.com/yunamoon/react-community'},
         
@@ -48,7 +48,7 @@ function Projects({check}) {
         title : '스마트 쑥쑥 웹', 
         Description :  '신규 서비스인 스마트 쑥쑥의 초기 기획과 프로젝트 설계에 참여하고 베타, 초기 버전, 마이그레이션 중 프론트엔드 영역을 개발했습니다.',
         TechStack  : 'Angular , Angular-Material, Chart.Js, TypeScript, JavaScript, React, Redux, Redux Saga, Sass, styled-components, Tailwind css, GCP, Firebase , Jest, Git actions',
-        img : 'src/assets/images/sample.jpg',
+        img :  slider_sample,
         liveLink : 'https://hh99-ac7ee--pr2-develop-hl070utt.web.app',
         gitLink : 'https://github.com/yunamoon/react-community'},
 

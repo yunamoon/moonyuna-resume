@@ -2,12 +2,12 @@ import React from 'react'
 import profile from '../assets/images/profile.png'
 function Intro({check}) {
 
-  const PDF_FILE_URL = 'http://localhost:5173/resume.pdf';
+  const PDF_FILE_URL = 'http://yunamoon.github.io/yuna-portfolio/resume.pdf';
 
   const DownloadResume = (url) => {
     const a = document.createElement('a');
     a.href = url;
-    a.setAttribute('download', 'resume.pdf');
+    a.setAttribute('download', 'resume.pdf' );
     document.body.appendChild(a);
     a.click();
     a.remove();

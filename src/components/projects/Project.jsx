@@ -1,5 +1,5 @@
 import React from 'react'
-
+import slider_sample from '../../assets/images/sample.jpg';
 function ProjectItem ({title , contents, check}) {
 
   return (
