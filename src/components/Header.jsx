@@ -12,9 +12,9 @@ function HeaderItem({item ,check}){
 function Header({handleThema, check}) {
 
    const [headerItem, setHeaderItem] = useState([
-    {title : 'Experience' , link : '/' , target : '_self'},
-    {title : 'Projects' , link : '/' , target : '_self'},
-    {title : 'Technologies' , link : '/' , target : '_self'},
+    // {title : 'Experience' , link : '/' , target : '_self'},
+    // {title : 'Projects' , link : '/' , target : '_self'},
+    // {title : 'Technologies' , link : '/' , target : '_self'},
     {title : 'Blog' , link : 'https://moonyuna.tistory.com/' , target : '_blank'},
     {title : 'Github' , link : 'https://github.com/yunamoon' , target : '_blank'},
    ])
