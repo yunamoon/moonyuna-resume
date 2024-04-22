@@ -12,11 +12,11 @@ function Projects({check}) {
 
     const [projects , setProjects] = useState([
         {id : 1,
-        title : 'Commune', 
-        Description :  '신규 서비스인 스마트 쑥쑥의 초기 기획과 프로젝트 설계에 참여하고 베타 버전의 프론트엔드 영역을 개발했습니다.',
-        TechStack  : 'TypeScript, JavaScript, React, Redux, styled-components, Tailwind css, Firebase, Jest, Git actions',
+        title : 'HH99', 
+        Description :  'HH99는 서로의 포스트를 공유하고 상호 작용할 수 있는 온라인 커뮤니티 플랫폼입니다. 사용자들은 서로의 게시글에 좋아요를 표시하고 댓글을 남기며 친목을 형성할 수 있습니다..',
+        TechStack  : 'JavaScript, React, Redux, styled-components, Tailwind css, Firebase, Jest, Git actions',
         img : slider_sample,
-        liveLink : 'https://hh99-ac7ee--pr2-develop-hl070utt.web.app',
+        liveLink : 'https://hh99-ac7ee.web.app',
         gitLink : 'https://github.com/yunamoon/react-community'},
         
         // {id : 2,
@@ -49,8 +49,8 @@ function Projects({check}) {
         Description :  '신규 서비스인 스마트 쑥쑥의 초기 기획과 프로젝트 설계에 참여하고 베타, 초기 버전, 마이그레이션 중 프론트엔드 영역을 개발했습니다.',
         TechStack  : 'Angular , Angular-Material, Chart.Js, TypeScript, JavaScript, React, Redux, Redux Saga, Sass, styled-components, Tailwind css, GCP, Firebase , Jest, Git actions',
         img :  slider_sample,
-        liveLink : 'https://hh99-ac7ee--pr2-develop-hl070utt.web.app',
-        gitLink : 'https://github.com/yunamoon/react-community'},
+        liveLink : '/',
+        gitLink : '/'},
 
         // {id : 6,
         // title : '스마트 쑥쑥 앱', 
